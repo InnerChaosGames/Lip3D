@@ -8,12 +8,15 @@ public class ExhibitInspectButton : MonoBehaviour
 {
     [SerializeField] private InspectController inspectControllerOverride;
     [SerializeField] private GameObject exhibitPrefab; 
+    [SerializeField] private string title;
+    [SerializeField] private string description;
     
     private XRBaseInteractable _interactable;
     private InspectController _inspectController;
 
     private void Awake()
     {
+        print(description);
         _interactable = GetComponent<XRBaseInteractable>();
         _inspectController = inspectControllerOverride != null
             ? inspectControllerOverride
@@ -35,6 +38,6 @@ public class ExhibitInspectButton : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs _)
     {
         print("Interactable entered");
-        _inspectController?.TeleportToInspectRoom(exhibitPrefab);
+        _inspectController?.TeleportToInspectRoom(exhibitPrefab, title, description);
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -32,6 +33,11 @@ public class InspectController : MonoBehaviour
     
     [Header("Exit input")]
     [SerializeField] private InputActionProperty exitInspectAction; // e.g. Y/B button
+
+    [Header("Extra info")] 
+    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TextMeshProUGUI description;
+
 
     private Vector3 _savedPosition;
     private Quaternion _savedRotation;
@@ -114,7 +120,7 @@ public class InspectController : MonoBehaviour
         }
     }
     
-    public void TeleportToInspectRoom(GameObject source)
+    public void TeleportToInspectRoom(GameObject source, string title, string description)
     {
         if (_isInspecting)
             return;
@@ -147,6 +153,10 @@ public class InspectController : MonoBehaviour
         // Instantiate a copy of the exhibit at the spawn point
         _currentClone = Instantiate(source, inspectSpawnPoint.position, inspectSpawnPoint.rotation);
 
+        // add description
+        this.title.text = title.Replace("\\n", "\n");
+        this.description.text = description.Replace("\\n", "\n");
+        
         // No stripping needed if it's just a plain model
 
         AutoScaleCloneToTargetHeight();
