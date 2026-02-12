@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using Meta.WitAi.TTS.Utilities;
 
 public class InspectController : MonoBehaviour
 {
@@ -38,7 +39,9 @@ public class InspectController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private TextMeshProUGUI description;
 
-
+    [Header("TTS Speaker")]
+    [SerializeField] private TTSSpeaker ttsSpeaker;
+    
     private Vector3 _savedPosition;
     private Quaternion _savedRotation;
     private bool _isInspecting;
@@ -46,6 +49,8 @@ public class InspectController : MonoBehaviour
 
     private Vector3 _baseScale;
     private float _zoomScale = 1f;
+
+    private Coroutine _inspectCoroutine;
     
     private void Reset()
     {
@@ -166,6 +171,9 @@ public class InspectController : MonoBehaviour
         _zoomScale = 1f;
 
         _isInspecting = true;
+        
+        // TTS
+        _inspectCoroutine = StartCoroutine(Speak(title, description));
     }
 
     public void TeleportBackToMuseum()
@@ -185,6 +193,10 @@ public class InspectController : MonoBehaviour
         SetLocomotionEnabled(true);
         transform.SetPositionAndRotation(_savedPosition, _savedRotation);
         _isInspecting = false;
+        
+        // Stop tts
+        ttsSpeaker.Stop();
+        StopCoroutine(_inspectCoroutine);
     }
 
     private void AutoScaleCloneToTargetHeight()
@@ -224,4 +236,18 @@ public class InspectController : MonoBehaviour
             teleportProvider.enabled = enabled;
     }
     
+    public IEnumerator Speak(string title, string description)
+    {
+        if (ttsSpeaker != null)
+        {
+            ttsSpeaker.Speak(title);
+            yield return new WaitForSeconds(2f);
+            ttsSpeaker.Speak(description);
+        }
+        else
+        {
+            Debug.LogError("TTSSpeaker nu este setat!");
+        }
+    }
+
 }
