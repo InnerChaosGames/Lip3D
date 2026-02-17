@@ -105,8 +105,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4239135, y: 1.0688958, z: 0.61016923}
-  m_Center: {x: 0.06350446, y: -0.0039838552, z: 0.04153505}
+  m_Size: {x: 1.4239135, y: 1.3517663, z: 0.61016923}
+  m_Center: {x: 0.06350446, y: 0.13745296, z: 0.041535053}
 --- !u!114 &8452041676953167522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectControllerOverride: {fileID: 0}
-  exhibitPrefab: {fileID: 4191145442065427366, guid: 18233f5519ac43c4bac7b2a88c243758,
+  exhibitPrefab: {fileID: 2299474993784252058, guid: 0811f83ad58b3024184b8694da98a6ff,
     type: 3}
   title: The Tombstone
   description: Some tombstone

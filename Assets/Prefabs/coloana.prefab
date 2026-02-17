@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectControllerOverride: {fileID: 0}
-  exhibitPrefab: {fileID: 4191145442065427366, guid: 18233f5519ac43c4bac7b2a88c243758,
+  exhibitPrefab: {fileID: 2266283667101655450, guid: 969b72af66b05794083e06b826b922f1,
     type: 3}
   title: The Column
   description: The Columns of the Ulpia Traiana Sarmizegetusa Forum, situated in
