@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3238041006491245159}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.603, y: 2.059, z: 5.441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3238041006491245159}
-  m_Mesh: {fileID: 3863960508326421153, guid: a97a337972d85774e971aa4f79ccfbef, type: 3}
+  m_Mesh: {fileID: 3863960508326421153, guid: 8c50ce1435c9fd6419feded3d36da4ac, type: 3}
 --- !u!23 &4214698509862894196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d69fb2807bde63489275c7a382e4746, type: 2}
+  - {fileID: 2100000, guid: 49872b2b72605124eaff1b6cc7fe5259, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,3 +224,9 @@ MonoBehaviour:
   inspectControllerOverride: {fileID: 0}
   exhibitPrefab: {fileID: 4191145442065427366, guid: 18233f5519ac43c4bac7b2a88c243758,
     type: 3}
+  title: The Column
+  description: The Columns of the Ulpia Traiana Sarmizegetusa Forum, situated in
+    the Roman Forum at Ulpia Traiana Sarmizegetusa featured an open central plaza
+    enveloped by porticos. These covered galleries were structurally supported by
+    column arrays. These columns served as a primary architectural component, providing
+    both monumentality and spatial functionality to the civic center
