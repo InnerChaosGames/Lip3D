@@ -224,5 +224,7 @@ MonoBehaviour:
   inspectControllerOverride: {fileID: 0}
   exhibitPrefab: {fileID: 2299474993784252058, guid: 0811f83ad58b3024184b8694da98a6ff,
     type: 3}
-  title: The Tombstone
-  description: Some tombstone
+  title: Fragment of a Tombstone
+  description: The 3D scan represents a fragment from a funerary slab (either a funerary
+    stele or a part of a sarcophagus) discovered within the Ulpia Traiana Sarmizegetusa
+    complex.

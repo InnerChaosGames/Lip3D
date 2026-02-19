@@ -16,7 +16,7 @@ public class ExhibitInspectButton : MonoBehaviour
 
     private void Awake()
     {
-        print(description);
+        //print(description);
         _interactable = GetComponent<XRBaseInteractable>();
         _inspectController = inspectControllerOverride != null
             ? inspectControllerOverride

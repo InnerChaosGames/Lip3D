@@ -2634,7 +2634,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some fountain
+  m_text: Public fountains were crucial to the urban infrastructure and daily life
+    in Ulpia Traiana Sarmizegetusa, the capital of the Roman province of Dacia. While
+    no single, iconic 'fountain' akin to Rome's Trevi Fountain exists, the archaeological
+    site has nonetheless revealed several water supply points and their associated
+    decorative features.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4393,7 +4397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Tombstone
+  m_text: Fragment of a Tombstone
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4420,7 +4424,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
+  m_fontSize: 0.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4817,7 +4821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1220254246
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5936,7 +5940,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some tombstone
+  m_text: The 3D scan represents a fragment from a funerary slab (either a funerary
+    stele or a part of a sarcophagus) discovered within the Ulpia Traiana Sarmizegetusa
+    complex.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8647,7 +8653,7 @@ PrefabInstance:
     - target: {fileID: 2658369820418650759, guid: cae2c73af3a68944eb4dbf77a119cb7b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.22
+      value: -14.778
       objectReference: {fileID: 0}
     - target: {fileID: 2658369820418650759, guid: cae2c73af3a68944eb4dbf77a119cb7b,
         type: 3}
@@ -8917,7 +8923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4990087122012099686
 Transform:
   m_ObjectHideFlags: 0

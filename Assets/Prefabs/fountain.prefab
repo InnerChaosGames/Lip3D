@@ -225,4 +225,8 @@ MonoBehaviour:
   exhibitPrefab: {fileID: 3198823553085329174, guid: ea8db442e26277b4191aa712db4fd403,
     type: 3}
   title: The Fountain
-  description: Some fountain
+  description: 'Public fountains were crucial to the urban infrastructure and daily
+    life in Ulpia Traiana Sarmizegetusa, the capital of the Roman province of Dacia.
+    While no single, iconic ''fountain'' akin to Rome''s Trevi Fountain exists, the
+    archaeological site has nonetheless revealed several water supply points and
+    their associated decorative features. '
